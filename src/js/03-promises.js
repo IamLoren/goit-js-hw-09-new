@@ -20,6 +20,7 @@ form.addEventListener('submit', (event) => {
   const delayInput = [...inputs].filter(input => input.getAttribute('name') === 'delay')[0];
   const stepInput = [...inputs].filter(input => input.getAttribute('name') === 'step')[0];
   const amountInput = [...inputs].filter(input => input.getAttribute('name') === 'amount')[0];
+  
   let delay = Number(delayInput.value);
   const step = Number(stepInput.value);
   const amount = Number(amountInput.value);
