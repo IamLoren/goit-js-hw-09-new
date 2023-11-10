@@ -28,6 +28,7 @@ flatpickr(input, {
       startButton.removeAttribute('disabled');
       startButton.addEventListener('click', () => {
         const interval = setInterval(() => {
+          startButton.setAttribute('disabled', true);
           countDifference(diff);
           diff -= 1000;
           if (diff < 0) {
@@ -35,7 +36,6 @@ flatpickr(input, {
             return;
           }
         }, 1000);
-        startButton.setAttribute('disabled', true);
       });
     }
   },

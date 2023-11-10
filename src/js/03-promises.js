@@ -17,10 +17,10 @@ form.addEventListener('input', () => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const delayInput = [...inputs].filter(input => input.getAttribute('name') === 'delay')[0];
-  const stepInput = [...inputs].filter(input => input.getAttribute('name') === 'step')[0];
-  const amountInput = [...inputs].filter(input => input.getAttribute('name') === 'amount')[0];
-  
+  const delayInput = [...inputs].find(input => input.getAttribute('name') === 'delay');
+  const stepInput = [...inputs].find(input => input.getAttribute('name') === 'step');
+  const amountInput = [...inputs].find(input => input.getAttribute('name') === 'amount');
+
   let delay = Number(delayInput.value);
   const step = Number(stepInput.value);
   const amount = Number(amountInput.value);
