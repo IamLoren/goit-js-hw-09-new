@@ -1,0 +1,2 @@
+[data-start],[data-stop]{width:150px;height:50px;cursor:pointer;background-color:#00ffae;border:2px solid #5900ff;border-radius:10px;font-size:25px;font-weight:700;transition:all .5s;position:relative;top:50vh;left:50%;transform:translate(-50%,-50%)}[data-start]:hover,[data-stop]:hover{color:#fff;background-color:#5900ff}[data-start]:disabled{color:#4d4b4b;background-color:#aeaaaa;border-color:gray}
+/*# sourceMappingURL=01-color-switcher.f26d9a10.css.map */
